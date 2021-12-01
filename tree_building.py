@@ -11,4 +11,4 @@ in_file = [f"msa_files_corrected/{i}" for i in list_of_files]
 out_file = [f"trees/{i.split('.')[0]}" for i in list_of_files]
 
 for i in tqdm(range(len(in_file))):
-    run(f"/home/exsto/PHYML/PhyML-3.1/PhyML-3.1_linux64 -i {in_file[i]} -d aa -b 0 -o n > {out_file[i]}", shell=True)
+    run(f"/home/exsto/PHYML/PhyML-3.1/PhyML-3.1_linux64 -i {in_file[i]} -d aa -b 0 > {out_file[i]}", shell=True)
